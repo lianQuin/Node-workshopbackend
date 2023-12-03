@@ -1,4 +1,4 @@
-//aca van a estar las rutas de las api del manejo de los datos
+//aca van a estar las rutas de las api del manejo de los datos, este archivo solo debe recibir peticiones
 const express = require ('express');
 const router = express .Router();//a este rauter despues lo vamos a leer desde app
 
