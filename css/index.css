@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@import url(./componentes/resets.css);
+/*Header*/
+@import url(./componentes/header.css);
+
+/*HERO*/
+@import url(./componentes/hero.css);
+
+/*Collections*/
+@import url(./componentes/collections.css);
+
+
+/*SLIDER*/
+@import url(./componentes/slider.css);
+
+/*FOOTER*/
+@import url(./componentes/footer.css);
+
+/*ANIMATIONS*/
+@import url(./componentes/animations.css);
+
+/*SHOP*/
+@import url(./shop.css);
+
+/*ITEM*/
+@import url(./item.css);
+
+/*LOGIN*/
+@import url(./login.css);
+
+/*CREATE*/
+@import url(./create.css);
+
+/*CARRITO*/
+@import url(./carrito.css);
+
+/*ADMIN*/
+@import url(./admin.css);

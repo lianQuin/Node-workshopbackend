@@ -1,0 +1,159 @@
+
+.selectores{
+    border-radius: 5px;
+}
+
+.elegir-archivo{
+    border-radius: 5px;
+    width: 125.24px;
+    font-family: var(--base-font);    
+}
+
+
+.main{
+    width: 827.63px;
+    height: 669.3px;
+    margin-left: 250px;
+    margin-top: 30px;
+
+}
+
+.crear-item{
+    font-family: var(--alternative-font);
+    font-size: 42px;
+    margin-bottom: 30px;
+
+}
+
+.contenedor-div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.categoria{
+    font-family: var(--alternative-font);
+    font-size: 24px;
+
+}
+
+.licencia{
+    font-family: var(--alternative-font);
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.selectores{
+    border-radius: 5px;
+    width: 243.03px;
+    height: 44.28px;
+    padding-left: 10px;
+    color: var(--light-color);
+}
+
+.subtitulos{
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
+    font-size: 24px;
+    padding-right: 10px;
+   
+}
+
+.caracteristicas{
+    width: 662.4px;
+    height: 29px;
+    display: flex;
+    margin-bottom: 35px;
+    
+}
+
+.textarea{
+    width: 827.63px;
+    margin: 30px 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+    color: var(--light-color);
+}
+
+
+.selectores-cuotas{
+    border-radius: 5px;
+    width: 346px;
+    height: 44px;
+    text-align: left;
+    padding-left: 10px;
+       
+}
+
+.input-sinborde-maslargo{
+    border: none;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 200px;
+    height: 27.36px;
+    text-align: center;
+}
+
+.input-sinborde-largo {
+    border: none;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 90px;
+    height: 27.36px;
+    text-align: left;
+}
+
+.input-sinborde-corto {
+    border: none;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 45px;
+    height: 27.36px;
+    text-align: center;
+}
+
+.pago-completo{
+    display: flex;
+    
+}
+.pago {
+    display: flex;
+    align-items: center;
+}
+
+.elegir-archivo{
+    border-radius: 5px;
+    width: 125.24px;
+    height: 25.29px;
+    font-family: var(--base-font);    
+    font-size: 14px;
+    background-color: var(--light-color);
+}
+
+.botones{
+    width: 384.14px;
+    height: 44.33px;
+   
+}
+
+.boton{
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    width: 175px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.div-imagenes {
+    display: flex;
+    width: 519.73px;
+    height: 29px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.texto-imagenes {
+    font-family: var(--alternative-font);
+    font-size: 14px;
+}
+
