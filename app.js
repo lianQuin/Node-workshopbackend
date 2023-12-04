@@ -4,12 +4,17 @@ const express = require ('express');//estamos llamando a la libreria para poder 
 const app = express();//usando todos los metodos de express-monta el server
 const PORT = 4000;//esto va en el archivo secreto .env
 
+const mainRoutes = require  ('./src/routes/mainRoutes');
+const shopRoutes = require  ('./src/routes/shopRoutes');
+
 
 //mildewere a nivel aplicacion
 app.use(express.static('public_html'));
 
-//ruta definida, con esta informacion lo configuramos- una ruta y un puerto)
-app.get('/', (req, res) => res.send (''))
+app.use('/',mainRoutes);
+app.use('/shop',shopRoutes);
+
+
 
 
 
