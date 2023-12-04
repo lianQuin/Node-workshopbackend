@@ -6,14 +6,16 @@ const PORT = 4000;//esto va en el archivo secreto .env
 
 const mainRoutes = require  ('./src/routes/mainRoutes');
 const shopRoutes = require  ('./src/routes/shopRoutes');
-
+const adminRoutes = require ('./src/routes/adminRoutes');
+const authRoutes = require ('./src/routes/authRoutes');
 
 //mildewere a nivel aplicacion
 app.use(express.static('public_html'));
 
 app.use('/',mainRoutes);
-app.use('/shop',shopRoutes);
-
+app.use('/',shopRoutes);
+app.use('/',adminRoutes);
+app.use('/',authRoutes);
 
 
 
