@@ -2,14 +2,14 @@
 
 const express = require ('express');//estamos llamando a la libreria para poder crear el servidor,
 const app = express();//usando todos los metodos de express-monta el server
-const PORT = 4001;//esto va en el archivo secreto .env
-const charactersRoutes = require('./src/routes/charactersRoutes');
+const PORT = 4000;//esto va en el archivo secreto .env
+
 
 //mildewere a nivel aplicacion
 app.use(express.static('public_html'));
 
 //ruta definida, con esta informacion lo configuramos- una ruta y un puerto)
-app.get('/', (req, res) => res.send ('HOLa mundo desde node'))
+app.get('/', (req, res) => res.send (''))
 
 
 
