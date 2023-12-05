@@ -15,8 +15,10 @@ app.set("view engine", "ejs");
 app.set('views', './src/views')
 app.use(expressLayouts);
 app.set("layout", "layouts/layout");
+//midelwere para formularios extended para formularios simples,toma los datos del formulario
+app.use(express.urlencoded({extended:false}));
 
-//mildewere a nivel aplicacion
+//mildewere a nivel aplicacion, ESTE SE QUEDA PARA CSS
 app.use(express.static('public_html'));
 
 app.use('/',mainRoutes);
