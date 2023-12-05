@@ -1,20 +1,34 @@
-const shopControllers ={
-    shop:(req, res)=> res.send('Route for shop view'),
-    shop/item/:id : (req, res)=> res.send('Route for find and retrieve a product from an id'),
-    about:(req, res)=> res.send('Route for about view'),
-    faqs:(req, res)=> res.send('Route for faqs view'),
+const ItemsService = require('../services/itemServices');
+
+
+module.exports = {
+  shopView:  async (req, res) => {
+    const items = await ItemsService.getAllItems();
+    const { data } = items;
+    res.render( './shop/shop',{
+      view: {
+        title: "Shop | Funkoshop"
+      },
+      items: data
+    });
+  },
+  detailView: async (req, res) => {
+    const id = req.params.id;
+    const item = await ItemsService.getItem(id);
+    const { data } = item;
+
+    if (!data[0]) {
+      res.status(404).send('El producto con el ID seleccionado no existe o fue eliminado');
     }
-    
 
-    router.get('/shop',);
-    router.get('/shop/item/:id',);
-    router.post('/shop/item/:id/add',(req, res)=> res.send('Route for  add the current item to the shop cart'));
-    router.get('/shop/cart',(req, res)=> res.send('Route for cart view'));
-    router.post('/shop/cart',(req, res)=> res.send('Route for the shop cart view'));
-    
-
-
-
-
-
-    module.exports = shopControllers;
+    res.render('./shop/detail', {
+      view: {
+        title: "Item | Funkoshop"
+      },
+      item: data[0]
+    });
+  },
+  addItemToCart: (req, res) => res.send('Route to add a item to cart'),
+  cartView: (req, res) => res.send('Cart View Route'),
+  checkout: (req, res) => res.send('Route to receive the selected products and init the buy process'),
+};
