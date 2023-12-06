@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT =  3000;
 const path = require('path');
-//const methodOverride = require('method-override');
+const methodOverride = require('method-override');
 
 
 /* Import de la rutas */
@@ -31,7 +31,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 /* Override para habilitar métodos PUT y DELETE */
-//app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 
 /* Rutas de la aplicación */
 
