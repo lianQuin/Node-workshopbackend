@@ -28,7 +28,10 @@ module.exports = {
       item: data[0]
     });
   },
-  addItemToCart: (req, res) => res.send('Route to add a item to cart'),
-  cartView: (req, res) => res.send('Cart View Route'),
-  checkout: (req, res) => res.send('Route to receive the selected products and init the buy process'),
+  /* Esta es la ruta para agregar un artículo al carrito de compras.*/
+  addItemToCart: (req, res) => res.send('Ruta para agregar un artículo al carrito'),
+  /*Esta es la ruta para ver el carrito de compras*/
+  cartView: (req, res) => res.send('Ruta de vista del carrito'),
+/*Esta es la ruta para recibir los productos seleccionados del carrito de compras e iniciar el proceso de compra.*/
+  checkout: (req, res) => res.send('Ruta para recibir los productos seleccionados e iniciar el proceso de compra'),
 };
