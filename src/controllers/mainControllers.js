@@ -61,11 +61,11 @@ const addCart = (req, res) => {
 
   console.log(req.params.id, req.session.cart?.items);
   res.send("Cart add");
-};*/
+};
 
 module.exports = {
   index,
   shop,
   addCart,
-}; 
+}; */
 
