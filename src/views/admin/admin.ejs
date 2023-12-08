@@ -1,0 +1,51 @@
+
+<%- include('../partials/header') %>
+    <main>
+    <div class="container" style="overflow-x: auto;">
+        <!--Comienza la tabla-->
+        <form action="" class="form__admin container">
+            <img class="form__img" src="../../img/icons/search_icon.svg" alt="Lupa">
+            <div class="form__search">
+                <input type="text"name="search"id="search" placeholder="código, nombre o categoria">
+            </div>
+        </form>
+        <div class="admin__contenido">
+        <div class="admin__productos">
+            <h1>LISTADO DE PRODUCTOS</h1>
+            <div class="productos__agregar">
+                <p>AGREGAR<a href="create.html">
+                <img class="plus-box" src="../../img/icons/mdi_plus-box (1).svg" alt="mas"></a><p>
+            </div>
+        </div> 
+        <table>
+
+            <thead>
+
+
+                <tr>
+                    <th>ID</th>
+                    <th>Código</th>
+                    <th>Nombre del Producto</th>
+                    <th>Categoria</th>
+                    <th>   </th>
+                    <th>   </th>
+                </tr>
+            </thead>
+            <% items.forEach(item => { %>
+            <tbody>
+                <tr>
+                    <td><%= item.product_id %></td>
+                    <td><%= item.sku %></td>
+                    <td><%= item.product_name %></td>
+                    <td><%= item.category_name %></td>
+                    <td><a href="/admin/edit/<%= item.product_id %>"><img src="../../img/icons/edit_pencil.svg"></a></td>
+                    
+                    <td><form action="/admin/delete/<%= item.product_id %>?_method=DELETE" method="POST">
+                        <button class="admin-table__btn-delete" type="submit">
+                            <img src="../../img/icons/delete_trash.svg" alt="delete_trash">
+                        </button>
+                    </form></td> <% }); %>
+                </form>
+            </div>
+        </main>
+        <%- include('../partials/footer') %>
