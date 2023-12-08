@@ -10,6 +10,7 @@ module.exports = {
                       align-items: center;
                       height: 100vh;
                       flex-direction: column;
+                      background-color: grey;
                     }
                     h1 { color: blue; }
                   </style>
